@@ -113,18 +113,18 @@ public class Prueba {
         //Informacion
         System.out.println("Informacion del Restaurante"+"\n");
         System.out.println();
-        System.out.println(Informacion+"\n");
+       // System.out.println(Informacion+"\n");
     
         //Recibo
         System.out.println("Recibo"+"\n");
-        System.out.println(Recibo+"\n");
+        //System.out.println(Recibo+"\n");
         
         //Parqueo
         System.out.println("Parqueo"+"\n");
-        System.out.println(parqueo+"\n");
+        //System.out.println(parqueo+"\n");
         //Menu
         System.out.println("Menu"+"\n");
-        System.out.println(Menu+"\n");
+        //System.out.println(Menu+"\n");
         
         //Inventario
         System.out.println("Inventario"+"\n");

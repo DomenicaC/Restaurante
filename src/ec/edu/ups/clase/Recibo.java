@@ -43,7 +43,7 @@ public class Recibo {
     }
 
     public double getTotal() {
-        return tthis.otal;
+        return this.total;
     }
     
 }
