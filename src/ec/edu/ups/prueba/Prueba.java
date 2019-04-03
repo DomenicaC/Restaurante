@@ -34,25 +34,20 @@ public class Prueba {
 
         Scanner sn = new Scanner(System.in);
         boolean salir = false;
-        int opcion;
-        System.out.println("Bienvenido al Restaurante ´CHIFA´");
-
-        while (!salir) {
-
-            System.out.println("1. Información acerca del Restaurante");
-            System.out.println("2. Parqueo");
-            System.out.println("3. Menu");
-            System.out.println("4. Inventario");
-            System.out.println("5. Recibo");
-            System.out.println("6. Salir");
-
+        boolean salir1 = false;
+        int op, opcion;
+        System.out.println("Bienvenido al proyecto Restaurante");
+        
+        while (!salir1){
+            System.out.println("1. mostrar informacion guardada");
+            System.out.println("2. ingresar nuevos datos");
+            System.out.println("3. Salir");
+            
             System.out.println("Elija una opcion");
-            opcion = sn.nextInt();
-
-            switch (opcion) {
+            op = sn.nextInt();
+            
+            switch (op){
                 case 1:
-                    System.out.println("Has seleccionado la opción Información");
-                    //Informacion 
                     Informacion info = new Informacion();
                     info.setNombre("CHIFA");
                     info.setDireccion("Eloy Alfaro y Av. de las Americas");
@@ -73,12 +68,8 @@ public class Prueba {
                     System.out.println("to String" + "\n");
                     System.out.println("Informacion del Restaurante");
                     System.out.println(info.toString() + "\n");
-                    
-                    break;
-                case 2:
-                    System.out.println("Has seleccionado la opción Parqueo");
-                    //Parqueo
-                    Parqueo par = new Parqueo();
+    
+    Parqueo par = new Parqueo();
                     par.setNombreC("Juan Perez");
                     par.setCodigo(1);
                     par.setMarcaV("Mazda");
@@ -97,12 +88,8 @@ public class Prueba {
                     System.out.println("to String" + "\n");
                     System.out.println("Parqueo");
                     System.out.println(par.toString() + "\n");
-                    
-                    break;
-                case 3:
-                    System.out.println("Has seleccionado la opción Menú");
-                    //Menu
-                    Menu menu = new Menu();
+    
+    Menu menu = new Menu();
                     menu.setNombreComida("Chaulafan");
                     menu.setPrecio(8.50);
                     menu.setDescripcion("Arroz con camarones con salsa china");
@@ -121,12 +108,8 @@ public class Prueba {
                     System.out.println("to String" + "\n");
                     System.out.println("Menu");
                     System.out.println(menu.toString() + "\n");
-                    
-                    break;
-                case 4:
-                    System.out.println("Has seleccionado la opción Infventario");
-                    //Inventario
-                    Inventario inv = new Inventario();
+    
+    Inventario inv = new Inventario();
                     inv.setPlato(100);
                     inv.setCubierto(100);
                     inv.setMesa(25);
@@ -145,12 +128,8 @@ public class Prueba {
                     System.out.println("to String" + "\n");
                     System.out.println("Inventario");
                     System.out.println(inv.toString() + "\n");
-        //            
-                    break;
-                case 5:
-                    System.out.println("Has seleccionado la opción Recibo");
-                    //Recibo
-                    Recibo rec = new Recibo();
+    
+    Recibo rec = new Recibo();
                     rec.setNombreCl("Juan Perez");
                     rec.setTelefono(4659317);
                     rec.setTotal(10.45);
@@ -169,6 +148,98 @@ public class Prueba {
                     System.out.println("to String" + "\n");
                     System.out.println("Recibo");
                     System.out.println(rec.toString() + "\n");
+                    break;
+                case 2:
+                    while (!salir) {
+
+            System.out.println("1. Información acerca del Restaurante");
+            System.out.println("2. Parqueo");
+            System.out.println("3. Menu");
+            System.out.println("4. Inventario");
+            System.out.println("5. Recibo");
+            System.out.println("6. Salir");
+
+            System.out.println("Elija una opcion");
+            opcion = sn.nextInt();
+
+            switch (opcion) {
+                case 1:
+                    System.out.println("Has seleccionado la opción Información");
+                    //Informacion 
+                    
+                    System.out.println("Ingrese el nombre del restaurante");
+                    String nomR=sn.nextLine();
+                    System.out.println("Ingrese la dirección del restaurante");
+                    String dire=sn.nextLine();
+                    System.out.println("Ingrese el telefono del restaurante");
+                    int telefono=sn.nextInt();
+                    
+                    //imprimir
+                    System.out.println("Nombre restaurante " + nomR);
+                    System.out.println("Direccion Restaurante " + dire);
+                    System.out.println("Telefono " + telefono);
+                    
+                    break;
+                case 2:
+                    System.out.println("Has seleccionado la opción Parqueo");
+                    //Parqueo
+                    System.out.println("Ingrese el nombre del cliente");
+                    String nomCli=sn.nextLine();
+                    System.out.println("Ingrese la marca del vehiculo");
+                    String marcaVe=sn.nextLine();
+                    System.out.println("Ingrese el codigo del cliente");
+                    int cod=sn.nextInt();
+                    
+                    System.out.println("Nombre Cliente " + nomCli);
+                    System.out.println("Codigo " + cod);
+                    System.out.println("Marca " + marcaVe);
+                    
+                    
+                    break;
+                case 3:
+                    System.out.println("Has seleccionado la opción Menú");
+                    //Menu
+                    System.out.println("Ingrese el nombre de la comida");
+                    String nomCom=sn.nextLine();
+                    System.out.println("Ingrese la descripcion de la comida");
+                    String desc=sn.nextLine();
+                    System.out.println("Ingrese el Precio de la comida");
+                    double precioC=sn.nextDouble();
+                    
+                    
+                    System.out.println("Nombre de la comida " + nomCom);
+                    System.out.println("Precio de la comida " + precioC);
+                    System.out.println("Descripcion " + desc);
+                    
+                    break;
+                case 4:
+                    System.out.println("Has seleccionado la opción Inventario");
+                    //Inventario
+                    System.out.println("Ingrese el numero de platos");
+                    int platoI=sn.nextInt();
+                    System.out.println("Ingrese el numero de cubiertos");
+                    int cubI=sn.nextInt();
+                    System.out.println("Ingrese el numero de mesas");
+                    int mesaI=sn.nextInt();
+                    
+                    System.out.println("Platos " + platoI);
+                    System.out.println("Cubiertos " + cubI);
+                    System.out.println("Mesas " + mesaI);
+                    
+                    break;
+                case 5:
+                    System.out.println("Has seleccionado la opción Recibo");
+                    //Recibo
+                    System.out.println("Ingrese el nombre del cliente");
+                    String nomCl=sn.nextLine();
+                    System.out.println("Ingrese el telefono de Cliente");
+                    int telfR=sn.nextInt();
+                    System.out.println("Ingrese el ");
+                    double totR=sn.nextDouble();
+                    
+                    System.out.println("Nombre del Cliente " + nomCl);
+                    System.out.println("Telefono " + telfR);
+                    System.out.println("Total " + totR);
                     
                     break;
                 
@@ -182,7 +253,22 @@ public class Prueba {
             }
 
         }
+                    break;
+                    case 3:
+                    System.out.println("Has seleccionado la opción Salir");
+                    System.out.println("Gracias");
+                    salir1 = true;
+                    break;
+                default:
+                    System.out.println("Solo digite números entre 1 y 3");
+            }
+        }
+
+        
 
     }
+    /*
+    
+    */
 
 }
