@@ -8,6 +8,14 @@ package ec.edu.ups.clase;
 /**
  *
  * @author Domenica Cañizares
+ * Parqueo Practica01-VintimillaDomenica
+ * En esta clase se va a almacenar la informacion del parqueadero
+ * private-> Hacer un metodo privado
+ * to String-> Para objetos String , el método toString devuelve una cadena que representa al objeto.
+ * set-> Dar valores a las variables
+ * get-> Obtener valores de las variables
+ * this-> Dar un valor a una variable exacta 
+ * return-> Retornar variables 
  */
 public class Parqueo {
     private int codigo;
@@ -17,7 +25,7 @@ public class Parqueo {
     //to String
     @Override    
     public String toString() {
-        return "Parqueo{" + "codigo=" + codigo + ", nombreC=" + nombreC + ", marcaV=" + marcaV + '}';
+        return "Parqueo{" + "Codigo= " + codigo + ", Nombre Cliente= " + nombreC + ", Marca Vehiculo= " + marcaV + '}';
     }
 
     //Set

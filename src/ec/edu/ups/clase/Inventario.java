@@ -8,6 +8,14 @@ package ec.edu.ups.clase;
 /**
  *
  * @author Domenica Cañizares
+ * Inventario Practica01-VintimillaDomenica
+ * En esta clase se va a almacenar el numero de cosas qeu tiene un restaurante
+ * private-> Hacer un metodo privado
+ * to String-> Para objetos String , el método toString devuelve una cadena que representa al objeto.
+ * set-> Dar valores a las variables
+ * get-> Obtener valores de las variables
+ * this-> Dar un valor a una variable exacta 
+ * return-> Retornar variables 
  */
 public class Inventario {
     private int plato;
@@ -15,12 +23,14 @@ public class Inventario {
     private int mesa;
     
     //to String
-    @Override    
-    public String toString() {
-        return "Inventario{" + "plato=" + plato + ", cubierto=" + cubierto + ", mesa=" + mesa + '}';
-    }
 
+    @Override
+    public String toString() {
+        return "Inventario{" + "Plato= " + plato + ", Cubierto= " + cubierto + ", Mesa= " + mesa + '}';
+    }
+    
     //Set
+
     public void setPlato(int plato) {
         this.plato = plato;
     }
@@ -32,18 +42,19 @@ public class Inventario {
     public void setMesa(int mesa) {
         this.mesa = mesa;
     }
+   
     
     //Get
+
     public int getPlato() {
-        return this.plato;
+        return plato;
     }
 
     public int getCubierto() {
-        return this.cubierto;
+        return cubierto;
     }
 
     public int getMesa() {
-        return this.mesa;
-    }
-    
+        return mesa;
+    } 
 }

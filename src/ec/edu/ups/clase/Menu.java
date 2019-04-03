@@ -8,6 +8,14 @@ package ec.edu.ups.clase;
 /**
  *
  * @author Domenica Cañizares
+ * Menu Practica01-VintimillaDomenica
+ * En esta clase se va a mostrar los productos que ofrece el restaurante al ciente
+ * private-> Hacer un metodo privado
+ * to String-> Para objetos String , el método toString devuelve una cadena que representa al objeto.
+ * set-> Dar valores a las variables
+ * get-> Obtener valores de las variables
+ * this-> Dar un valor a una variable exacta 
+ * return-> Retornar variables 
  */
 public class Menu {
     
@@ -18,7 +26,7 @@ public class Menu {
     //to String
     @Override    
     public String toString() {
-        return "Menu{" + "nombreComida=" + nombreComida + ", precio=" + precio + ", descripcion=" + descripcion + '}';
+        return "Menu{" + "Nombre de la Comida= " + nombreComida + ", Precio= " + precio + ", Descripcion= " + descripcion + '}';
     }
 
     //Set

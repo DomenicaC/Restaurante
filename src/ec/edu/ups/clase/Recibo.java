@@ -8,6 +8,14 @@ package ec.edu.ups.clase;
 /**
  *
  * @author Domenica Cañizares
+ * Recibo Practica01-VintimillaDomenica
+ * En esta clase se va a almacenar los datos del cliente para su factura
+ * private-> Hacer un metodo privado
+ * to String-> Para objetos String , el método toString devuelve una cadena que representa al objeto.
+ * set-> Dar valores a las variables
+ * get-> Obtener valores de las variables
+ * this-> Dar un valor a una variable exacta 
+ * return-> Retornar variables 
  */
 public class Recibo {
     private String nombreCl;
@@ -17,7 +25,7 @@ public class Recibo {
     //to String
     @Override    
     public String toString() {
-        return "Recibo{" + "nombreCl=" + nombreCl + ", telefono=" + telefono + ", total=" + total + '}';
+        return "Recibo{" + "Nombre Cliente= " + nombreCl + ", Telefono= " + telefono + ", Total= " + total + '}';
     }
 
     //Set
